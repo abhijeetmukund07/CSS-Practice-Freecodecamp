@@ -1,0 +1,44 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.text-content {
+    font-family: "Arial Rounded MT Bold";
+    font-size: 6vw;
+    max-font-size: 6.5vw;
+}
+
+.text-content::after {
+    content: "React JS";
+    background-color: royalblue;
+    padding: 15px;
+    border-radius: 20px;
+    animation: swapText 3.5s infinite;
+}
+
+@keyframes swapText {
+    0% {
+        content: "React JS"
+    }
+    25% {
+        content: "Javascript"
+    }
+    50% {
+        content: "Python"
+    }
+    75% {
+        content: "Mangoes"
+    }
+    100% {
+        content: "React JS";
+    }
+}

@@ -1,0 +1,52 @@
+:root{
+    --color-1: red;
+    --color-2: blue;
+    --color-3: #eea826;
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.loader-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.square{
+    margin: 1em;
+    height: 2.5em;
+    width: 2.5em;
+    transform: rotate(45deg);
+    animation: spin 1.5s infinite  ;
+    /*animation-delay: -1s;*/
+}
+
+#sq1{
+    background-color: var(--color-1);
+}
+
+#sq2{
+    background-color: var(--color-3);
+}
+
+#sq3{
+    background-color: var(--color-2);
+}
+
+@keyframes spin {
+    from{transform:rotate(45deg);}
+    to{
+        transform:rotate(-45deg);
+    }
+    /*25% { transform: rotate(45deg); }*/
+    /*50% { transform: rotate(90deg); }*/
+    /*75% { transform: rotate(135deg); }*/
+    /*100% { transform: rotate(180deg); }*/
+}
+
+
