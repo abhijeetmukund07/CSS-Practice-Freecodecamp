@@ -1,0 +1,46 @@
+
+:root {
+    --red-stripe: #ED2938;
+    --white-stripe: #FFF;
+    --blue-stripe: #002495;
+    --flag-height: 200px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.french-flag {
+    display: flex;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * (3 / 2));
+    -webkit-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+}
+
+.stripe {
+    flex: 1;
+}
+
+#blue-stripe {
+    background-color: var(--blue-stripe);
+}
+
+#red-stripe {
+    background-color: var(--red-stripe);
+}
+
+#white-stripe {
+    background-color: var(--white-stripe);
+}

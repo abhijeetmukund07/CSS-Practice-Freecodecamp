@@ -1,0 +1,57 @@
+
+:root {
+    --flag-height: 200px;
+    --white: #ffffff;
+    --coral-red: #FC3D32;
+    --Philippine-Green: #007E3A;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.madagascar-flag {
+    display: flex;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * (3 / 2));
+    -webkit-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 29px -5px rgba(0, 0, 0, 0.75);
+}
+
+.left {
+    flex: 1;
+    /*border: 1px solid green;*/
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+}
+
+
+#stripe-1 {
+    flex: 1;
+    background-color: var(--white);
+    border-color: green;
+}
+
+#stripe-2 {
+    flex: 1;
+    background-color: var(--coral-red);
+}
+
+#stripe-3 {
+    flex: 1;
+    background-color: var(--Philippine-Green);
+}
