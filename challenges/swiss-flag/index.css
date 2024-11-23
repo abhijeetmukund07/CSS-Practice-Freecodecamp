@@ -1,0 +1,67 @@
+
+:root {
+    --red-stripe: red;
+    --white-stripe: #FFF;
+    --flag-height: 200px;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.swiss-flag {
+    margin: none;
+    display: flex;
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 1);
+}
+
+.stripe {
+    flex: 1;
+}
+
+.outer-stripe {
+    background-color: var(--red-stripe);
+}
+
+.second-inner-stripe {
+    display: flex;
+    flex-direction: column;
+}
+
+.innermost-stripe {
+    display: flex;
+    flex-direction: column;
+}
+
+.inner-stripe-1 {
+    /*border: 1px solid yellow;*/
+    flex: 2;
+    background-color: var(--red-stripe);
+}
+
+.inner-stripe-2 {
+    flex: 1;
+    background-color: var(--white-stripe);
+}
+
+.inner-stripe-3 {
+    flex: 1;
+    background-color: var(--red-stripe);
+
+}
+
+.inner-stripe-4 {
+    flex: 3;
+    background-color: var(--white-stripe);
+}
