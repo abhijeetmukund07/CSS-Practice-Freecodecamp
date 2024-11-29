@@ -1,0 +1,41 @@
+
+:root {
+    --red: #ff0000;
+    --white: #ffffff;
+    --flag-height: 200px;
+    --circle-diameter: calc(var(--flag-height) * 3 / 5);
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.japan-flag {
+    height: var(--flag-height);
+    width: calc(var(--flag-height) * 3 / 2);
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    -webkit-box-shadow: 0px 0px 48px 7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 48px 7px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 48px 7px rgba(0, 0, 0, 0.75);
+}
+
+.circle {
+    height: var(--circle-diameter);
+    width: var(--circle-diameter);
+    border-radius: 50%;
+    background-color: var(--red);
+}

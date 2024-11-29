@@ -1,0 +1,47 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #006AA7;
+    --secondary-color: #FECC02;
+    --flag-height: 150px;
+    --flag-width: calc(var(--flag-height) * 8 / 5);
+    /*    aspect ratio: 5:8*/
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.sweden-flag {
+    background-color: var(--primary-color);
+    height: var(--flag-height);
+    width: var(--flag-width);
+    display: flex;
+    position: relative;
+}
+
+.stripe {
+    background-color: var(--secondary-color);
+    height: calc(var(--flag-height) * 1 / 5);
+    /*margin-bottom: 10px;*/
+}
+
+#stripe-1 {
+    width: var(--flag-height);
+    position: absolute;
+    transform: rotate(90deg);
+    top: calc(var(--flag-height) * 4 / 10);
+    right: calc(var(--flag-width) * 5 / 16);
+}
+
+#stripe-2 {
+    width: var(--flag-width);
+    align-self: center;
+}
